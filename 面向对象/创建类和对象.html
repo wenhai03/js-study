@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 1.创建类 class 创建一个明显类
+    class Star {
+      constructor (name, age){
+        this.name = name
+        this.age = age
+      }
+    }
+    // 2.利用类创建对象 new
+    let ldh = new Star('刘德华', 18)
+    let zxy = new Star('张学友', 20)
+
+    console.log('ldh------', ldh)
+    console.log('zxy------', zxy)
+
+    // 1.通过class关键字创建类，类名首字母大写
+    // 2.类里面有个construct函数，可以接受传递过来的参数，同时返回实例对象
+    // 3.construct 函数只要new 生成实例，就会自动调用这个函数，如果我们不写这个函数，类也会自动生成这个函数
+    // 4.类里面的所有函数不需要写function，多个函数方法之间不需要添加逗号
+    // 5.类的继承，通过super()关键字调用了父类中的构造函数，也可以通过super调用父类中的普通函数 super.say()
+    // 6.继承中属性或者方法的查找原则：就近原则
+    // 7.在ES6中类没有变量提升，所以必须先定义类，才能通过类实例化对象，类里面的共有属性和方法一定要加this、使用
+</script>
+</body>
+</html>
